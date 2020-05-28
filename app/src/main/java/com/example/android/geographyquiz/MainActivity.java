@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -71,8 +72,10 @@ public class MainActivity extends AppCompatActivity {
 
         // show score
         int score = getScore();
-        TextView scoreDisp = (TextView) findViewById(R.id.score_display);
-        scoreDisp.setText("" + score);
+        Toast.makeText(getApplicationContext(),
+                "Score: " + score,
+                Toast.LENGTH_LONG)
+                .show();
     }
 
 }

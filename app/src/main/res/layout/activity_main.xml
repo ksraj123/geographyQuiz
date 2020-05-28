@@ -25,23 +25,6 @@
 
         <LinearLayout
             style="@style/Questions">
-            <TextView
-                style="@style/QuestionsHeading"
-                android:text="Score"
-                android:textAlignment="center"/>
-
-            <TextView
-                android:id="@+id/score_display"
-                android:layout_height="wrap_content"
-                android:textSize="40sp"
-                android:textColor="#FFF"
-                android:layout_width="match_parent"
-                android:textAlignment="center"
-                android:text="Not Played Yet"/>
-        </LinearLayout>
-
-        <LinearLayout
-            style="@style/Questions">
 
             <TextView
                 style="@style/QuestionsHeading"
