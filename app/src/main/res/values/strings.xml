@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Geography Quiz</string>
+    <string name="question1">Where is Mount Everest?</string>
+    <string name="question1_1">Kenya</string>
+    <string name="question1_2">The Alps</string>
+    <string name="question1_3">India</string>
+    <string name="question1_4">The border between Nepal and India</string>
+    <string name="question2">The United States shares border with which countries?</string>
+    <string name="question2_1">Kenya</string>
+    <string name="question2_2">Canada</string>
+    <string name="question2_3">India</string>
+    <string name="question2_4">Mexico</string>
+    <string name="question3">What country is famous for maple syrup?</string>
+    <string name="question3_1">India</string>
+    <string name="question3_2">Canada</string>
+    <string name="question3_3">China</string>
+    <string name="question3_4">Japan</string>
+    <string name="question4">What country has the greatest population?</string>
+    <string name="question4_hint">Enter Country name</string>
 </resources>

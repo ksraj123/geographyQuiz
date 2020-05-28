@@ -32,7 +32,7 @@
 
             <TextView
                 style="@style/QuestionsText"
-                android:text="Where is Mount Everest?"/>
+                android:text="@string/question1"/>
 
             <RadioGroup
                 android:id="@+id/question_1"
@@ -41,19 +41,19 @@
 
                 <RadioButton
                     style="@style/QuestionsText"
-                    android:text="Kenya" />
+                    android:text="@string/question1_1" />
 
                 <RadioButton
                     style="@style/QuestionsText"
-                    android:text="The Alps" />
+                    android:text="@string/question1_2" />
 
                 <RadioButton
                     style="@style/QuestionsText"
-                    android:text="India" />
+                    android:text="@string/question1_3" />
 
                 <RadioButton
                     style="@style/QuestionsText"
-                    android:text="The border between Nepal and India" />
+                    android:text="@string/question1_4" />
 
             </RadioGroup>
 
@@ -70,27 +70,27 @@
             <TextView
                 android:id="@+id/question_2"
                 style="@style/QuestionsText"
-                android:text="The United States shares border with which countries?"/>
+                android:text="@string/question2"/>
 
                 <CheckBox
                     android:id="@+id/question_2_1"
                     style="@style/QuestionsText"
-                    android:text="Kenya" />
+                    android:text="@string/question2_1" />
 
                 <CheckBox
                     android:id="@+id/question_2_2"
                     style="@style/QuestionsText"
-                    android:text="Canada" />
+                    android:text="@string/question2_2" />
 
                 <CheckBox
                     android:id="@+id/question_2_3"
                     style="@style/QuestionsText"
-                    android:text="India" />
+                    android:text="@string/question2_3" />
 
                 <CheckBox
                     android:id="@+id/question_2_4"
                     style="@style/QuestionsText"
-                    android:text="Mexico" />
+                    android:text="@string/question2_4" />
 
         </LinearLayout>
 
@@ -103,7 +103,7 @@
 
             <TextView
                 style="@style/QuestionsText"
-                android:text="What country is famous for maple syrup?"/>
+                android:text="@string/question3"/>
 
             <RadioGroup
                 android:id="@+id/question_3"
@@ -112,19 +112,19 @@
 
                 <RadioButton
                     style="@style/QuestionsText"
-                    android:text="India" />
+                    android:text="@string/question3_1" />
 
                 <RadioButton
                     style="@style/QuestionsText"
-                    android:text="Canada" />
+                    android:text="@string/question3_2" />
 
                 <RadioButton
                     style="@style/QuestionsText"
-                    android:text="China" />
+                    android:text="@string/question3_3" />
 
                 <RadioButton
                     style="@style/QuestionsText"
-                    android:text="Japan" />
+                    android:text="@string/question3_4" />
 
             </RadioGroup>
 
@@ -139,14 +139,14 @@
 
             <TextView
                 style="@style/QuestionsText"
-                android:text="What country has the greatest population?"/>
+                android:text="@string/question4"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/question_4"
                 android:textColor="#FFFFFF"
-                android:hint="Enter Country name"/>
+                android:hint="@string/question4_hint"/>
 
         </LinearLayout>
 
