@@ -13,12 +13,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String[] correctAnswers  = new String[] {"4", "0101", "6", "china"};
+    private String[] correctAnswers  = new String[] {"The border between Nepal and India", "0101", "Canada", "china"};
     private String[] userAnswers = new String[correctAnswers.length];
-
-    public void MainActivity(){
-//        correctAnswers = new String[] {"India"};
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,16 +50,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void submit(View view){
         // Question 1
-        RadioGroup radioQuestion = (RadioGroup) findViewById(R.id.question_1);
-        userAnswers[0] = Integer.toString(radioQuestion.getCheckedRadioButtonId());
+        RadioGroup question1 = (RadioGroup) findViewById(R.id.question_1);
+        RadioButton question1_btn = (RadioButton) question1.findViewById(question1.getCheckedRadioButtonId());
+        userAnswers[0] =  question1_btn.getText().toString();
 
         // Question 2
         userAnswers[1] = checkboxResponse();
 
         // Question 3
         RadioGroup question3 = (RadioGroup) findViewById(R.id.question_3);
-        userAnswers[2] = Integer.toString(question3.getCheckedRadioButtonId());
-        Log.v("input button", userAnswers[2]);
+        RadioButton question3_btn = (RadioButton) question3.findViewById(question3.getCheckedRadioButtonId());
+        userAnswers[2] =  question3_btn.getText().toString();
 
         // Question 4
         EditText question4 = (EditText) findViewById(R.id.question_4);
