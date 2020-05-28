@@ -1,69 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#81c784"
     tools:context=".MainActivity">
 
-    <LinearLayout
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="8dp">
+            style="@style/Questions">
+            <TextView
+                style="@style/QuestionsHeading"
+                android:text="Score"
+                android:textAlignment="center"/>
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/score_display"
                 android:layout_height="wrap_content"
-                android:text="Question 1"
-                android:textSize="32sp"/>
+                android:textSize="40sp"
+                android:textColor="#FFF"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:text="Not Played Yet"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Questions">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Where is Mount Everest?"
-                android:textSize="24sp"/>
+                style="@style/QuestionsHeading"
+                android:text="Question 1" />
+
+            <TextView
+                style="@style/QuestionsText"
+                android:text="Where is Mount Everest?"/>
 
             <RadioGroup
+                android:id="@+id/question_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Kenya"
-                    android:textSize="24sp"
-                    android:paddingLeft="8dp"/>
+                    style="@style/QuestionsText"
+                    android:text="Kenya" />
 
                 <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="The Alps"
-                    android:textSize="24sp"
-                    android:paddingLeft="8dp"/>
+                    style="@style/QuestionsText"
+                    android:text="The Alps" />
 
                 <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="India"
-                    android:textSize="24sp"
-                    android:paddingLeft="8dp"/>
+                    style="@style/QuestionsText"
+                    android:text="India" />
 
                 <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="The border between Nepal and India"
-                    android:textSize="24sp"
-                    android:paddingLeft="8dp"/>
+                    style="@style/QuestionsText"
+                    android:text="The border between Nepal and India" />
 
             </RadioGroup>
 
         </LinearLayout>
 
+
+        <LinearLayout
+            style="@style/Questions">
+
+            <TextView
+                style="@style/QuestionsHeading"
+                android:text="Question 2" />
+
+            <TextView
+                android:id="@+id/question_2"
+                style="@style/QuestionsText"
+                android:text="The United States shares border with which countries?"/>
+
+                <CheckBox
+                    android:id="@+id/question_2_1"
+                    style="@style/QuestionsText"
+                    android:text="Kenya" />
+
+                <CheckBox
+                    android:id="@+id/question_2_2"
+                    style="@style/QuestionsText"
+                    android:text="Canada" />
+
+                <CheckBox
+                    android:id="@+id/question_2_3"
+                    style="@style/QuestionsText"
+                    android:text="India" />
+
+                <CheckBox
+                    android:id="@+id/question_2_4"
+                    style="@style/QuestionsText"
+                    android:text="Mexico" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Questions">
+
+            <TextView
+                style="@style/QuestionsHeading"
+                android:text="Question 3" />
+
+            <TextView
+                style="@style/QuestionsText"
+                android:text="What country is famous for maple syrup?"/>
+
+            <RadioGroup
+                android:id="@+id/question_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/QuestionsText"
+                    android:text="India" />
+
+                <RadioButton
+                    style="@style/QuestionsText"
+                    android:text="Canada" />
+
+                <RadioButton
+                    style="@style/QuestionsText"
+                    android:text="China" />
+
+                <RadioButton
+                    style="@style/QuestionsText"
+                    android:text="Japan" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Questions">
+
+            <TextView
+                style="@style/QuestionsHeading"
+                android:text="Question 3\4" />
+
+            <TextView
+                style="@style/QuestionsText"
+                android:text="What country has the greatest population?"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question_4"
+                android:textColor="#FFFFFF"
+                android:hint="Enter Country name"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/questions"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+        android:onClick="submit"/>
+
 </RelativeLayout>
+
+</ScrollView>
